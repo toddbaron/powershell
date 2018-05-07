@@ -1,0 +1,19 @@
+#
+#Script: GroupPasswordChange.ps1
+#Description: Script to reset user passwords in group and force a password change at next logon
+#
+#Written by: Todd Baron
+#Script assumes that users have been put into group called "group" within the AD structure shown below. This also assumes the $password variable fulfills requirements for domain password policy
+#
+#
+Import-Module ActiveDirectory
+#
+#Set temporary password
+$password = ConvertTo-SecureString -AsPlainText "NewPassword1" -Force
+#Get users from group and pipe into password change
+Get-ADUser -Filter {memberof -RecursiveMatch "CN=group,OU=PasswordChangeGroups,OU=User Groups,OU=Groups,OU=BaseOU,DC=ad,DC=domain,DC=com"} | Set-ADAccountPassword -NewPassword $password -Reset
+#Get users from samge group and set password change at next logon
+Get-ADUser -Filter {memberof -RecursiveMatch "CN=group,OU=PasswordChangeGroups,OU=User Groups,OU=Groups,OU=BaseOU,DC=ad,DC=domain,DC=com"} | Set-ADUser -ChangePasswordAtLogon $true
+#
+#
+#End
