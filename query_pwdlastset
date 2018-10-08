@@ -1,0 +1,1 @@
+Get-ADUser -filter {memberof -recursivematch "CN=Password-Reset,OU=QMPV-GROUPS,DC=quickmountpv,DC=com"} -Properties passwordlastset | Select-Object name,passwordlastset | Out-GridView
