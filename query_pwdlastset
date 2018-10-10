@@ -1,1 +1,8 @@
+$reply = Read-Host -Prompt "Are you sure you want to continue?[y/n]"
+while ($reply -ne "y"){
+  if ($reply -eq "n"){
+    exit
+}
+  $reply = Read-Host "Are you sure you want to continue?[y/n]?"
+}
 Get-ADUser -filter {memberof -recursivematch "CN=Password-Reset,OU=QMPV-GROUPS,DC=quickmountpv,DC=com"} -Properties passwordlastset | Select-Object name,passwordlastset | Out-GridView
