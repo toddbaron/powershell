@@ -7,6 +7,14 @@
 #https://www.mowasay.com/2016/10/active-directory-changing-passwords-for-users-in-bulk-using-a-csv-file/
 #
 #
+$reply = Read-Host -Prompt "Are you sure you want to continue?[y/n]"
+while ($reply -ne "y"){
+  if ($reply -eq "n"){
+    exit
+}
+  $reply = Read-Host "Are you sure you want to continue?[y/n]?"
+}
+
 Import-Module ActiveDirectory
 $PaswordList = Import-Csv "UNCPath"
 ForEach ($User in $PasswordList) {
