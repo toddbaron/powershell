@@ -1,0 +1,12 @@
+#Script name: rebootworkstations.ps1
+#
+#Written by Todd Baron
+#Adapted from SigKill IT at http://sigkillit.com/2015/01/06/restart-computers-by-ou/
+#
+#This script searches through an OU and restarts all computers in that specified OU
+Import-Module ActiveDirectory
+
+$comps = Get-ADComputer -filter * -SearchBase "OU=WORKSTATIONS,OU=QMPV-COMPUTERS,DC=quickmountpv,DC=com"
+ForEach ($pc in $comps) {
+    Restart-Computer -ComputerName $pc.Name -Force
+}
