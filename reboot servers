@@ -13,17 +13,11 @@ Restart-Computer -ComputerName wc-sv-file0 -Wait -Force
 Restart-Computer -ComputerName wc-sv-file1 -Wait -Force
 Restart-Computer -ComputerName wc-sv-file3 -Wait -Force
 Restart-Computer -ComputerName wc-sv-mail -Wait -Force
-Restart-Computer -ComputerName wc-sv-netctrl -Wait -Force
 Restart-Computer -ComputerName wc-sv-print -Wait -Force
 Restart-Computer -ComputerName wc-sv-rdsman -Wait -Force
 Restart-Computer -ComputerName wc-sv-rdsweb -Wait -Force
-Restart-Computer -ComputerName wc-sv-time -Wait -Force
 Restart-Computer -ComputerName wc-sv-update -Wait -Force
 Restart-Computer -ComputerName wc-sv-video -Wait -Force
 Restart-Computer -ComputerName wc-sv-webtest -Wait -Force
-
-#$serverlist = Import-Csv
-#ForEach ($server in $serverlist) {
-#    Restart-Computer -ComputerName $server 
-#
-#}
+Restart-Computer -ComputerName wc-sv-time -Wait -Force
+Restart-Computer -ComputerName wc-sv-netctrl -Wait -Force
