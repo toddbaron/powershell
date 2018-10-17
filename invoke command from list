@@ -1,0 +1,4 @@
+$comps = Get-ADComputer -Filter * -SearchBase "OU=WORKSTATIONS,OU=QMPV-COMPUTERS,DC=quickmountpv,DC=com" | select -Property name
+foreach ($comp in $comps){
+    Invoke-Command -ComputerName $comp.name {command}
+}
