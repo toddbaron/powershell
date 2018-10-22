@@ -10,6 +10,7 @@ Get-MsolAccountSku
 #(Get-MsolAccountSku | where {$_.AccountSkuId -eq "quickmountpv:ENTERPRISEPACK"}).ServiceStatus
 #Get-MsolAccountSku | select -ExpandProperty servicestatus
 
+#remember to remove Mike, Jeff, Todd from the group, then add back in later
 Get-ADUser -Filter {memberof -RecursiveMatch "CN=Online-Users,OU=QMPV-GROUPS,DC=quickmountpv,DC=com"} | Select-Object -Property UserPrincipalName | Set-MsolUserLicense -RemoveLicenses "quickmountpv:OFFICESUBSCRIPTION"
 Get-ADUser -Filter {memberof -RecursiveMatch "CN=Online-Users,OU=QMPV-GROUPS,DC=quickmountpv,DC=com"} | Select-Object -Property UserPrincipalName | Set-MsolUserLicense -AddLicenses "quickmountpv:ENTERPRISEPACK"
 
