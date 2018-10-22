@@ -14,5 +14,7 @@ Get-ADUser -Filter {memberof -RecursiveMatch "CN=Online-Users,OU=QMPV-GROUPS,DC=
 Get-ADUser -Filter {memberof -RecursiveMatch "CN=Online-Users,OU=QMPV-GROUPS,DC=quickmountpv,DC=com"} | Select-Object -Property UserPrincipalName | Set-MsolUserLicense -AddLicenses "quickmountpv:ENTERPRISEPACK"
 
 $LO = New-MsolLicenseOptions -AccountSkuId quickmountpv:ENTERPRISEPACK -DisabledPlans "BPOS_S_TODO_2", "", "FORMS_PLAN_E3", "STREAM_O365_E3", "Deskless", "FLOW_O365_P2", "POWERAPPS_O365_P2", "PROJECTWORKMANAGEMENT", "SWAY", "YAMMER_ENTERPRISE", "SHAREPOINTENTERPRISE", "EXCHANGE_S_ENTERPRISE"
+#use the following code to enable all services again
+#$LO = New-MsolLicenseOptions -AccountSkuId quickmountpv:ENTERPRISEPACK -DisabledPlans $null
 
 Get-ADUser -Filter {memberof -RecursiveMatch "CN=Online-Users,OU=QMPV-GROUPS,DC=quickmountpv,DC=com"} | Select-Object -Property UserPrincipalName | Set-MsolUserLicense -LicenseOptions $LO
