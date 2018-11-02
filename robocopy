@@ -1,0 +1,1 @@
+robocopy "z:\Accounting" "e:\Departments\Accounting" *.* /E /XD .TemporaryItems .Trashes "Greetings Creatures.docx.sb-8dd9b894-GQAPj5" "CA Sales Tax" /XF "2018 09 Petty Cash JE - audit trail.pdf" "2018 09 Petty Cash JE - posted.pdf" "GLA 16000 Deposit - 2018 09 JE audit trail.pdf" "GLA 16000 Deposit - 2018 09 JE posted.pdf"
