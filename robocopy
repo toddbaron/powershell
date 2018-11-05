@@ -1,1 +1,10 @@
-robocopy "z:\Accounting" "e:\Departments\Accounting" *.* /E /XD .TemporaryItems .Trashes "Greetings Creatures.docx.sb-8dd9b894-GQAPj5" "CA Sales Tax" /XF "2018 09 Petty Cash JE - audit trail.pdf" "2018 09 Petty Cash JE - posted.pdf" "GLA 16000 Deposit - 2018 09 JE audit trail.pdf" "GLA 16000 Deposit - 2018 09 JE posted.pdf"
+robocopy "z:\Accounting" "e:\Departments\Accounting" *.* /E
+robocopy "z:\Engineering" "e:\Departments\Engineering" *.* /E /XF "Test Report - [TITLE].doc" "Test Protocol - [TITLE].doc"
+robocopy "z:\R&D Drawings" "e:\OtherShares\R&D Drawings" *.* /E
+robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /E
+robocopy "z:\Sales" "e:\Departments\Sales" *.* /E
+robocopy "z:\Design" "e:\OtherShares\Design" *.* /E
+robocopy "z:\Purchasing" "e:\Departments\Purchasing" *.* /E
+robocopy "z:\Operations" "e:\Departments\Operations" *.* /E
+robocopy "z:\Facilities" "e:\Departments\Facilities" *.* /E
+robocopy "z:\Marketing" "e:\Departments\Marketing" *.* /E
