@@ -13,7 +13,7 @@ robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /E
 robocopy "z:\ERP" "e:\OtherShares\ERP" *.* /E
 robocopy "z:\ExCom" "e:\OtherShares\ExCom" *.* /E
 robocopy "z:\Executive Archive" "e:\OtherShares\Executive Archive" *.* /E
-robocopy "z:\General" "e:\OtherShares\General" *.* /E /XF "Datacentre.bom"
+robocopy "z:\General" "e:\OtherShares\General" *.* /E /XD "z:\General\SOFTWARE\Datacentre.pkg" "z:\General\SOFTWARE\MoneyWorks Datacentre Console 2.app"
 robocopy "z:\Grants" "e:\OtherShares\Grants" *.* /E
 robocopy "z:\Human Resources-Admin" "e:\OtherShares\HR-Admin" *.* /E
 robocopy "z:\LLC-Tenant" "e:\OtherShares\LLC-Tenant" *.* /E
