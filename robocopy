@@ -8,6 +8,7 @@ robocopy "z:\Operations" "e:\Departments\Operations" *.* /E
 robocopy "z:\Purchasing" "e:\Departments\Purchasing" *.* /E
 robocopy "z:\Sales" "e:\Departments\Sales" *.* /E
 robocopy "z:\Design" "e:\OtherShares\Design" *.* /E
+robocopy "z:\NDAs" "e:\OtherShares\NDAs" *.* /E
 robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /E
 robocopy "z:\R&D Drawings" "e:\OtherShares\R&D Drawings" *.* /E
 robocopy "z:\SOX" "e:\OtherShares\SOX" *.* /E
