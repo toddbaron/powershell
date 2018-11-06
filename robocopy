@@ -11,6 +11,8 @@ robocopy "z:\Sales" "e:\Departments\Sales" *.* /E
 robocopy "z:\Design" "e:\OtherShares\Design" *.* /E
 robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /E
 robocopy "z:\ERP" "e:\OtherShares\ERP" *.* /E
+robocopy "z:\ExCom" "e:\OtherShares\ExCom" *.* /E
+robocopy "z:\Executive Archive" "e:\OtherShares\Executive Archive" *.* /E
 robocopy "z:\Grants" "e:\OtherShares\Grants" *.* /E
 robocopy "z:\Human Resources-Admin" "e:\OtherShares\HR-Admin" *.* /E
 robocopy "z:\LLC-Tenant" "e:\OtherShares\LLC-Tenant" *.* /E
