@@ -2,11 +2,12 @@ net use z: "server.quickmountpv.com" /user:server\Administrator
 
 robocopy "z:\Accounting" "e:\Departments\Accounting" *.* /E
 robocopy "z:\Engineering" "e:\Departments\Engineering" *.* /E /XF "Test Report - [TITLE].doc" "Test Protocol - [TITLE].doc"
-robocopy "z:\R&D Drawings" "e:\OtherShares\R&D Drawings" *.* /E
-robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /E
-robocopy "z:\Sales" "e:\Departments\Sales" *.* /E
-robocopy "z:\Design" "e:\OtherShares\Design" *.* /E
-robocopy "z:\Purchasing" "e:\Departments\Purchasing" *.* /E
-robocopy "z:\Operations" "e:\Departments\Operations" *.* /E
 robocopy "z:\Facilities" "e:\Departments\Facilities" *.* /E
 robocopy "z:\Marketing" "e:\Departments\Marketing" *.* /E /XD "z:\Marketing\1. Source Files\JasonY Files\Documents\quickmountpv"
+robocopy "z:\Operations" "e:\Departments\Operations" *.* /E
+robocopy "z:\Purchasing" "e:\Departments\Purchasing" *.* /E
+robocopy "z:\Sales" "e:\Departments\Sales" *.* /E
+robocopy "z:\Design" "e:\OtherShares\Design" *.* /E
+robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /E
+robocopy "z:\R&D Drawings" "e:\OtherShares\R&D Drawings" *.* /E
+robocopy "z:\SOX" "e:\OtherShares\SOX" *.* /E
