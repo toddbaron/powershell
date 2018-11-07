@@ -26,3 +26,57 @@ robocopy "z:\Office-Managers" "e:\OtherShares\Office Managers" *.* /E
 robocopy "z:\Quick Rack" "e:\OtherShares\Quick Rack" *.* /E
 robocopy "z:\R&D Drawings" "e:\OtherShares\R&D Drawings" *.* /E
 robocopy "z:\SOX" "e:\OtherShares\SOX" *.* /E
+
+robocopy "z:\Accounting" "e:\Departments\Accounting" *.* /MIR
+robocopy "z:\Engineering" "e:\Departments\Engineering" *.* /MIR /XF "Test Report - [TITLE].doc" "Test Protocol - [TITLE].doc"
+robocopy "z:\Facilities" "e:\Departments\Facilities" *.* /MIR
+robocopy "z:\Human Resources" "e:\Departments\Human Resources" *.* /MIR
+robocopy "z:\Marketing" "e:\Departments\Marketing" *.* /MIR /XD "z:\Marketing\1. Source Files\JasonY Files\Documents\quickmountpv"
+robocopy "z:\Operations" "e:\Departments\Operations" *.* /MIR
+robocopy "z:\Purchasing" "e:\Departments\Purchasing" *.* /MIR
+robocopy "z:\Sales" "e:\Departments\Sales" *.* /MIR
+robocopy "z:\Controllers Dept" "e:\OtherShares\Controllers Dept" *.* /MIR
+robocopy "z:\Corporate Docs" "e:\OtherShares\Corporate Docs" *.* /MIR
+robocopy "z:\Design" "e:\OtherShares\Design" *.* /MIR
+robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /MIR
+robocopy "z:\Engineering-SolidWorks" "e:\OtherShares\Engineering-SolidWorks" *.* /MIR /XF "MediaID.bin"
+robocopy "z:\ERP" "e:\OtherShares\ERP" *.* /MIR
+robocopy "z:\ExCom" "e:\OtherShares\ExCom" *.* /MIR
+robocopy "z:\Executive" "e:\OtherShares\Executive Archive" *.* /MIR
+robocopy "z:\FastTrack Schedule 10" "e:\OtherShares\FastTrack Schedule 10" *.* /MIR /XD "z:\FastTrack Schedule 10\FastTrack Schedule 10.app" "z:\FastTrack Schedule 10\FastTrack Schedule 11.app"
+robocopy "z:\General" "e:\OtherShares\General" *.* /MIR /XD "z:\General\SOFTWARE\Datacentre.pkg" "z:\General\SOFTWARE\MoneyWorks Datacentre Console 2.app" "z:\General\SOFTWARE\MoneyWorks Datacentre Console.app"
+robocopy "z:\Grants" "e:\OtherShares\Grants" *.* /MIR
+robocopy "z:\Human Resources-Admin" "e:\OtherShares\HR-Admin" *.* /MIR
+robocopy "z:\LLC-Tenant" "e:\OtherShares\LLC-Tenant" *.* /MIR
+robocopy "z:\NDAs" "e:\OtherShares\NDAs" *.* /MIR
+robocopy "z:\Office-Managers" "e:\OtherShares\Office Managers" *.* /MIR
+robocopy "z:\Quick Rack" "e:\OtherShares\Quick Rack" *.* /MIR
+robocopy "z:\R&D Drawings" "e:\OtherShares\R&D Drawings" *.* /MIR
+robocopy "z:\SOX" "e:\OtherShares\SOX" *.* /MIR
+
+robocopy "z:\Accounting" "e:\Departments\Accounting" *.* /MIR /FFT
+robocopy "z:\Engineering" "e:\Departments\Engineering" *.* /MIR /FFT /XF "Test Report - [TITLE].doc" "Test Protocol - [TITLE].doc"
+robocopy "z:\Facilities" "e:\Departments\Facilities" *.* /MIR /FFT
+robocopy "z:\Human Resources" "e:\Departments\Human Resources" *.* /MIR /FFT
+robocopy "z:\Marketing" "e:\Departments\Marketing" *.* /MIR /FFT /XD "z:\Marketing\1. Source Files\JasonY Files\Documents\quickmountpv"
+robocopy "z:\Operations" "e:\Departments\Operations" *.* /MIR /FFT
+robocopy "z:\Purchasing" "e:\Departments\Purchasing" *.* /MIR /FFT
+robocopy "z:\Sales" "e:\Departments\Sales" *.* /MIR /FFT
+robocopy "z:\Controllers Dept" "e:\OtherShares\Controllers Dept" *.* /MIR /FFT
+robocopy "z:\Corporate Docs" "e:\OtherShares\Corporate Docs" *.* /MIR /FFT
+robocopy "z:\Design" "e:\OtherShares\Design" *.* /MIR /FFT
+robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /MIR /FFT
+robocopy "z:\Engineering-SolidWorks" "e:\OtherShares\Engineering-SolidWorks" *.* /MIR /FFT /XF "MediaID.bin"
+robocopy "z:\ERP" "e:\OtherShares\ERP" *.* /MIR /FFT
+robocopy "z:\ExCom" "e:\OtherShares\ExCom" *.* /MIR /FFT
+robocopy "z:\Executive" "e:\OtherShares\Executive Archive" *.* /MIR /FFT
+robocopy "z:\FastTrack Schedule 10" "e:\OtherShares\FastTrack Schedule 10" *.* /MIR /FFT /XD "z:\FastTrack Schedule 10\FastTrack Schedule 10.app" "z:\FastTrack Schedule 10\FastTrack Schedule 11.app"
+robocopy "z:\General" "e:\OtherShares\General" *.* /MIR /FFT /XD "z:\General\SOFTWARE\Datacentre.pkg" "z:\General\SOFTWARE\MoneyWorks Datacentre Console 2.app" "z:\General\SOFTWARE\MoneyWorks Datacentre Console.app"
+robocopy "z:\Grants" "e:\OtherShares\Grants" *.* /MIR /FFT
+robocopy "z:\Human Resources-Admin" "e:\OtherShares\HR-Admin" *.* /MIR /FFT
+robocopy "z:\LLC-Tenant" "e:\OtherShares\LLC-Tenant" *.* /MIR /FFT
+robocopy "z:\NDAs" "e:\OtherShares\NDAs" *.* /MIR /FFT
+robocopy "z:\Office-Managers" "e:\OtherShares\Office Managers" *.* /MIR /FFT
+robocopy "z:\Quick Rack" "e:\OtherShares\Quick Rack" *.* /MIR /FFT
+robocopy "z:\R&D Drawings" "e:\OtherShares\R&D Drawings" *.* /MIR /FFT
+robocopy "z:\SOX" "e:\OtherShares\SOX" *.* /MIR /FFT
