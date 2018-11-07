@@ -12,10 +12,11 @@ robocopy "z:\Controllers Dept" "e:\OtherShares\Controllers Dept" *.* /E
 robocopy "z:\Corporate Docs" "e:\OtherShares\Corporate Docs" *.* /E
 robocopy "z:\Design" "e:\OtherShares\Design" *.* /E
 robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /E
+robocopy "z:\Engineering-SolidWorks" "e:\OtherShares\Engineering-SolidWorks" *.* /E /XF "MediaID.bin"
 robocopy "z:\ERP" "e:\OtherShares\ERP" *.* /E
 robocopy "z:\ExCom" "e:\OtherShares\ExCom" *.* /E
 robocopy "z:\Executive" "e:\OtherShares\Executive Archive" *.* /E
-robocopy "z:\FastTrack Schedule 10" "e:\OtherShares\FastTrack Schedule 10" *.* /E
+robocopy "z:\FastTrack Schedule 10" "e:\OtherShares\FastTrack Schedule 10" *.* /E /XD "z:\FastTrack Schedule 10\FastTrack Schedule 10.app" "z:\FastTrack Schedule 10\FastTrack Schedule 11.app"
 robocopy "z:\General" "e:\OtherShares\General" *.* /E /XD "z:\General\SOFTWARE\Datacentre.pkg" "z:\General\SOFTWARE\MoneyWorks Datacentre Console 2.app" "z:\General\SOFTWARE\MoneyWorks Datacentre Console.app"
 robocopy "z:\Grants" "e:\OtherShares\Grants" *.* /E
 robocopy "z:\Human Resources-Admin" "e:\OtherShares\HR-Admin" *.* /E
