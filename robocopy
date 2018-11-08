@@ -26,6 +26,7 @@ robocopy "z:\Office-Managers" "e:\OtherShares\Office Managers" *.* /E
 robocopy "z:\Quick Rack" "e:\OtherShares\Quick Rack" *.* /E
 robocopy "z:\R&D Drawings" "e:\OtherShares\R&D Drawings" *.* /E
 robocopy "z:\SOX" "e:\OtherShares\SOX" *.* /E
+robocopy "e:\departments\engineering-instron" "e:\OtherShares\Engineering-Testing" *.* /E
 
 robocopy "z:\Accounting" "e:\Departments\Accounting" *.* /MIR
 robocopy "z:\Engineering" "e:\Departments\Engineering" *.* /MIR /XF "Test Report - [TITLE].doc" "Test Protocol - [TITLE].doc"
@@ -53,6 +54,7 @@ robocopy "z:\Office-Managers" "e:\OtherShares\Office Managers" *.* /MIR
 robocopy "z:\Quick Rack" "e:\OtherShares\Quick Rack" *.* /MIR
 robocopy "z:\R&D Drawings" "e:\OtherShares\R&D Drawings" *.* /MIR
 robocopy "z:\SOX" "e:\OtherShares\SOX" *.* /MIR
+robocopy "e:\departments\engineering-instron" "e:\OtherShares\Engineering-Testing" *.* /MIR
 
 robocopy "z:\Accounting" "e:\Departments\Accounting" *.* /MIR /FFT
 robocopy "z:\Engineering" "e:\Departments\Engineering" *.* /MIR /FFT /XF "Test Report - [TITLE].doc" "Test Protocol - [TITLE].doc"
@@ -80,3 +82,4 @@ robocopy "z:\Office-Managers" "e:\OtherShares\Office Managers" *.* /MIR /FFT
 robocopy "z:\Quick Rack" "e:\OtherShares\Quick Rack" *.* /MIR /FFT
 robocopy "z:\R&D Drawings" "e:\OtherShares\R&D Drawings" *.* /MIR /FFT
 robocopy "z:\SOX" "e:\OtherShares\SOX" *.* /MIR /FFT
+robocopy "e:\departments\engineering-instron" "e:\OtherShares\Engineering-Testing" *.* /MIR /FFT
