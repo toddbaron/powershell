@@ -12,7 +12,7 @@ robocopy "z:\Controllers Dept" "e:\OtherShares\Controllers Dept" *.* /E
 robocopy "z:\Corporate Docs" "e:\OtherShares\Corporate Docs" *.* /E
 robocopy "z:\Design" "e:\OtherShares\Design" *.* /E
 robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /E
-robocopy "z:\Engineering-SolidWorks" "e:\OtherShares\Engineering-SolidWorks" *.* /E /XF "MediaID.bin"
+robocopy "z:\Engineering-SolidWorks" "e:\Departments\Engineering\SolidWorks Admin" *.* /E /XD "z:\Engineering-SolidWorks\JENNIFERA-PC" "z:\Engineering-SolidWorks\test" "z:\Engineering-SolidWorks\VaultData" /XF "z:\Engineering-SolidWorks\MediaID.bin"
 robocopy "z:\ERP" "e:\OtherShares\ERP" *.* /E
 robocopy "z:\ExCom" "e:\OtherShares\ExCom" *.* /E
 robocopy "z:\Executive" "e:\OtherShares\Executive Archive" *.* /E
@@ -39,7 +39,7 @@ robocopy "z:\Controllers Dept" "e:\OtherShares\Controllers Dept" *.* /MIR
 robocopy "z:\Corporate Docs" "e:\OtherShares\Corporate Docs" *.* /MIR
 robocopy "z:\Design" "e:\OtherShares\Design" *.* /MIR
 robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /MIR
-robocopy "z:\Engineering-SolidWorks" "e:\OtherShares\Engineering-SolidWorks" *.* /MIR /XF "MediaID.bin"
+robocopy "z:\Engineering-SolidWorks" "e:\Departments\Engineering\SolidWorks Admin" *.* /MIR /XD "z:\Engineering-SolidWorks\JENNIFERA-PC" "z:\Engineering-SolidWorks\test" "z:\Engineering-SolidWorks\VaultData" /XF "z:\Engineering-SolidWorks\MediaID.bin"
 robocopy "z:\ERP" "e:\OtherShares\ERP" *.* /MIR
 robocopy "z:\ExCom" "e:\OtherShares\ExCom" *.* /MIR
 robocopy "z:\Executive" "e:\OtherShares\Executive Archive" *.* /MIR
@@ -66,7 +66,7 @@ robocopy "z:\Controllers Dept" "e:\OtherShares\Controllers Dept" *.* /MIR /FFT
 robocopy "z:\Corporate Docs" "e:\OtherShares\Corporate Docs" *.* /MIR /FFT
 robocopy "z:\Design" "e:\OtherShares\Design" *.* /MIR /FFT
 robocopy "z:\Drawings" "e:\OtherShares\Drawings" *.* /MIR /FFT
-robocopy "z:\Engineering-SolidWorks" "e:\OtherShares\Engineering-SolidWorks" *.* /MIR /FFT /XF "MediaID.bin"
+robocopy "z:\Engineering-SolidWorks" "e:\Departments\Engineering\SolidWorks Admin" *.* /MIR /FFT /XD "z:\Engineering-SolidWorks\JENNIFERA-PC" "z:\Engineering-SolidWorks\test" "z:\Engineering-SolidWorks\VaultData" /XF "z:\Engineering-SolidWorks\MediaID.bin"
 robocopy "z:\ERP" "e:\OtherShares\ERP" *.* /MIR /FFT
 robocopy "z:\ExCom" "e:\OtherShares\ExCom" *.* /MIR /FFT
 robocopy "z:\Executive" "e:\OtherShares\Executive Archive" *.* /MIR /FFT
