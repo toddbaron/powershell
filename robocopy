@@ -83,3 +83,7 @@ robocopy "z:\Quick Rack" "e:\OtherShares\Quick Rack" *.* /MIR /FFT
 robocopy "z:\R&D Drawings" "e:\OtherShares\R&D Drawings" *.* /MIR /FFT
 robocopy "z:\SOX" "e:\OtherShares\SOX" *.* /MIR /FFT
 robocopy "e:\departments\engineering-instron" "e:\OtherShares\Engineering-Testing" *.* /MIR /FFT
+
+#archived data
+robocopy "e:\OtherShares\ERP" "e:\Archival\ERP" *.* /MIR
+robocopy "z:\MoneyWorks" "e:\Archival\MoneyWorks" *.* /MIR
