@@ -1,0 +1,1 @@
+New-Cluster -Name wc-sv-hostv -Node wc-sv-host0,wc-sv-host1 -StaticAddress 10.10.55.212
