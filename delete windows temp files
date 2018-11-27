@@ -1,0 +1,6 @@
+foreach($computer in (Get-Content c:\computerlist.txt)){
+    Invoke-Command -ComputerName $computer -ScriptBlock {
+        Remove-Item c:\temp -Recurse -Force -Verbose |
+        Out-File "\\adminpc\logshare\$computer.txt"
+    }
+}
