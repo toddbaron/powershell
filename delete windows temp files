@@ -1,6 +1,7 @@
-foreach($computer in (Get-Content c:\computerlist.txt)){
-    Invoke-Command -ComputerName $computer -ScriptBlock {
-        Remove-Item c:\temp -Recurse -Force -Verbose |
-        Out-File "\\adminpc\logshare\$computer.txt"
+$serverlist = wc-sv-app0,wc-sv-app1,wc-sv-app2
+
+foreach($server in $serverlist){
+    Invoke-Command -ComputerName $server -ScriptBlock {
+    Remove-Item c:\windows\temp -Recurse -Force
     }
 }
