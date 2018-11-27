@@ -1,0 +1,4 @@
+Install-Module -Name AzureRM -AllowClobber
+Connect-AzureRmAccount
+Get-AzureRmSubscription
+New-AzureRmResourceGroup -Name MyAzureResourceGroup -Location "West US"
