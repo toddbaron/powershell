@@ -1,4 +1,6 @@
-$serverlist = wc-sv-app0,wc-sv-app1,wc-sv-app2
+#Get-ADComputer -filter * | Where-Object 
+
+$serverlist = "wc-sv-app0","wc-sv-app1","wc-sv-app2"
 
 foreach($server in $serverlist){
     Invoke-Command -ComputerName $server -ScriptBlock {
