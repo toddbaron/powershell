@@ -1,0 +1,4 @@
+#finds items greater than 500MB
+Get-ChildItem C:\ -recurse | where-object {$_.length -gt 524288000} | Sort-Object length | ft fullname, length -auto
+#finds files with specific file type
+Get-ChildItem C:\ -recurse -include *.exe
