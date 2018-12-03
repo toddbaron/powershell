@@ -1,0 +1,86 @@
+Import-Module "C:\Program Files\Microsoft Deployment Toolkit\bin\MicrosoftDeploymentToolkit.psd1"
+New-PSDrive -Name "DS001" -PSProvider MDTProvider -Root "\\wc-sv-file1\MDTBuild"
+
+$ApplicationName = "Install - Microsoft Visual C++ 2005 SP1 - x86"
+$CommandLine = "vcredist_2005SP1_x86.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2005"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2005 SP1 - x64"
+$CommandLine = "vcredist_2005SP1_x64.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2005"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2008 SP1 - x86"
+$CommandLine = "vcredist_2008SP1_x86.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2008"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2008 SP1 - x64"
+$CommandLine = "vcredist_2008SP1_x64.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2008"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2010 SP1 - x86"
+$CommandLine = "vcredist_2010SP1_x86.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2010"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2010 SP1 - x64"
+$CommandLine = "vcredist_2010SP1_x64.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2010"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2012 Update 4 - x86"
+$CommandLine = "vcredist_2012U4_x86.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2012"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2012 Update 4 - x64"
+$CommandLine = "vcredist_2012U4_x64.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2012"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2013 - x86"
+$CommandLine = "vcredist_2013_x86.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2013"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2013 - x64"
+$CommandLine = "vcredist_2013_x64.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2013"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2015 Update 3 - x86"
+$CommandLine = "vcredist_2015U3_x86.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2015"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2015 Update 3 - x64"
+$CommandLine = "vcredist_2015U3_x64.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2015"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2017 - x86"
+$CommandLine = "vcredist_2017_x86.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2017"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
+
+$ApplicationName = "Install - Microsoft Visual C++ 2017 - x64"
+$CommandLine = "vcredist_2017_x64.exe /Q"
+$ApplicationSourcePath = "\\files\MDT\Applications\Visual C++ Redist\2017"
+Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
+-Verbose
