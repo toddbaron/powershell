@@ -1,0 +1,3 @@
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
+Add-WindowsFeature Hyper-V-Powershell
+Resize-VHD -Path '\\wc-sv-file0\RDP-PROFILES\APP0\UVHD-S-1-5-21-2216228303-753954773-503254035-1186.vhdx' -SizeBytes 20GB
