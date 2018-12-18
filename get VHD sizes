@@ -1,0 +1,8 @@
+Get-ChildItem '\\wc-sv-file0\rdp-profiles\app0' | select fullname | Out-File \\files\IT\vhdsizes.csv
+
+$vhdlist = Import-Csv \\files\it\vhdsizes.csv
+foreach ($vhd in $vhdlist){
+Get-VHD -Path $vhd.H1 | select size,path
+
+
+}
