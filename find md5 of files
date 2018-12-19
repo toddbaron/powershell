@@ -1,0 +1,7 @@
+Get-ChildItem -Recurse | Select-Object Name | Out-File -FilePath \\files\IT\app0files.csv
+
+$filelist = Import-Csv -Path \\files\it\app0files.csv
+foreach ($filename in $filelist){
+certutil -hashfile $filename.H1 md5
+
+}
