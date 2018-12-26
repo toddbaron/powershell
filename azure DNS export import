@@ -1,0 +1,3 @@
+az login
+az network dns zone export -g DNS -n quickmountpv.com -f zonefile.csv
+az network dns zone import -g DNS -n quickmountpv.com -f zonefile.csv
