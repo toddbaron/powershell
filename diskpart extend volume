@@ -1,0 +1,9 @@
+diskpart
+select vdisk file="C:\UPDs\UVHD-<SID>.vhdx"
+expand vdisk maximum=20480
+attach vdisk
+list volume
+select volume=<number of UPD volume from previous command>
+extend
+detach vdisk
+exit
