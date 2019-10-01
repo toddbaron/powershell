@@ -1,0 +1,7 @@
+#download windows iso file by using chrome to access this site by acting like a mobile device using developer tools
+#https://www.microsoft.com/en-us/software-download/windows10ISO
+#or
+#https://www.microsoft.com/en-us/software-download/windows10
+#mount the windows iso and then use that drive letter with the following command
+
+dism /online /enable-feature /featurename:NetFX3 /all /Source:E:\sources\sxs /LimitAccess
