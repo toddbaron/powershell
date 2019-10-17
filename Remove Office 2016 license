@@ -1,0 +1,7 @@
+#check license for either 32-bit or 64-bit
+cscript "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" /dstatus
+cscript "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" /dstatus
+
+#remove license for either 32-bit or 64-bit, last 5 Xs are last 5 digits of license key to uninstall
+cscript "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" /unpkey:XXXXX
+cscript "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" /unpkey:XXXXX
