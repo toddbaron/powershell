@@ -1,0 +1,13 @@
+#Script for installing Windows 7 ESU license
+#
+#MAK Key: W9QFD-YBY34-34RRC-23TGV-JD6WD
+#Activation ID for Year 1 license: 77db037b-95c3-48d7-a3ab-a9c6d41093e0
+#
+
+#cscript c:\windows\system32\slmgr.vbs /ipk <key>
+#cscript c:\windows\system32\slmgr.vbs /ato <activation ID>
+
+Invoke-Command -ComputerName TH1-PLA-13OLD -ScriptBlock {
+cscript c:\windows\system32\slmgr.vbs /ipk W9QFD-YBY34-34RRC-23TGV-JD6WD
+cscript c:\windows\system32\slmgr.vbs /ato 77db037b-95c3-48d7-a3ab-a9c6d41093e0
+}
